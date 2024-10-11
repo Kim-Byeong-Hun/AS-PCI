@@ -4,6 +4,8 @@ Analytic system for parent-child interactions based on nonverbal communication u
 ## Abstract
 Parent-child interactions (PCIs) are critical for the development of a child across various domains, including language, social-emotional, cognitive, and emotional growth. In the context of family behavioral therapy, nonverbal communication (NVC) between parents and children is essential for evaluating the quality of PCIs. This study introduces a novel system that employs computer vision and deep learning techniques to analyze NVC-based PCI behaviors. The proposed system comprises three core modules: video stream input and preprocessing, NVC context extraction, and NVC-based PCI behavior analysis. The proposed system detects and tracks parents and children using multi-camera inputs, extracts NVC contexts such as distance and gaze, and classifies interactions based on these contexts. The key contributions of this study include the design of the system, automated extraction of NVC contexts, and analysis of the interaction categories. This approach facilitates a more objective and quantitative evaluation of PCI, offering valuable insights for enhancing the quality of PCIs. We validated the feasibility and applicability of the proposed analytical system for NVC context-based PCI behavior by implementing a prototype solution and applying it to actual video data obtained from our testbed.
 
+![Framework](fig/framework.png)
+
 This repo contains demo code for implementing the system. The original dataset is not publicly available due to subject privacy concerns, but the extracted NVC contexts can be used to implement it.
 
 ## System Requirements
