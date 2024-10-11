@@ -18,6 +18,8 @@ We trained a YOLOv8-based Head Detector and an PC Detector model to detect Paren
 The pre-trained model weights can be found in [here](https://github.com/Kim-Byeong-Hun/AS-PCI/tree/main/demo/weights), and the weights of the pre-trained RepVGG model can be downloaded [here](https://drive.google.com/drive/folders/1Du7GPb3Xf2eb5ZbWnXhbSFQxC1B3K7fG?usp=sharing).
 
 ## How to run it
+
+### Preparation
 First, clone the repository
 ```bash
 git clone https://github.com/Kim-Byeong-Hun/AS-PCI.git
@@ -26,3 +28,17 @@ Then download the required packages.
 ```bash
 pip install -r requirements.txt
 ```
+
+### NVC Context Extraction Process
+Upload the video to /demo/videos, and run the following to extract the NVC context from therecorded footage
+```bash
+# Front-angle video
+python /demo/main_Front.py --video_name 240712_007_C2
+
+# Video from bird's eyes view
+python /demo/main_Top.py --video_name 240712_007_C7
+```
+The extracted text file and the resulting video are stored in demo/outputs/, where the data extracted in this paper is already stored.
+
+### PCI analysis process
+The PCI analysis is done via /demo/k_means.ipynb, and the code includes both preprocessing and analysis.
