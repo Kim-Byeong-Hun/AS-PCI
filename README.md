@@ -42,3 +42,7 @@ The extracted text file and the resulting video are stored in demo/outputs/, whe
 
 ### PCI analysis process
 The PCI analysis is done via /demo/k_means.ipynb, and the code includes both preprocessing and analysis.
+
+## Reference
+- [YOLOv8](https://github.com/ultralytics/ultralytics)
+- [6DoFHPE](https://github.com/Redhwan-A/6DoFHPE)
